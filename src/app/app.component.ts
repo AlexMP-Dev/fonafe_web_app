@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { BannerLogosComponent } from './Components/banner-logos/banner-logos.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { MaincardsComponent } from './Components/maincards/maincards.component';
@@ -21,4 +21,12 @@ import { GridComponent } from "./Components/grid/grid.component";
 })
 export class AppComponent {
   title = 'fonafe_web_app';
+
+  constructor(private router: Router) {}
+
+  shouldShowNavbar(): boolean {
+    // Obtén la ruta actual y decide si mostrar o no el navbar
+    const currentRoute = this.router.url;
+    return currentRoute !== '/login'; // Muestra el navbar en todas las rutas excepto '/login'
+  }
 }

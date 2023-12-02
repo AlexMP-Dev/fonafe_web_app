@@ -1,8 +1,49 @@
-<div class="banner">
-  <div class="logo-left">
-    <img src="../../../assets/logo1.png" alt="Logo Izquierdo" style="height: 200px;">
-  </div>
-  <div class="logo-right">
-    <img src="../../../assets/logo2.png" alt="Logo Derecho" style="height: 200px;">
-  </div>
-</div>
+<app-row style="margin: 20px;" mainAxisAlignment="space-around" crossAxisAlignment="center">
+  <app-imagen source="../../../assets/LOGO.svg" width="250px"></app-imagen>
+  <app-column crossAxisAlignment="flex-end" mainAxisAlignment="center">
+    <p style="margin: 0px;font-weight: bold;color:darkgray">OBESERVATORIO DIGITAL DE FONAFE</p>
+    <a routerLink="/login" ><app-imagen style="margin: 0px;" source="../../../assets/BOTON_DE_INICIO.svg" width="100px" height="25px"></app-imagen></a>
+  </app-column>
+</app-row>
+<app-row
+  mainAxisAlignment="space-around"
+  crossAxisAlignment="center"
+  backgroundColor="gray"
+  minheight="40px"
+>
+  <app-boton
+    label="¿Quienes somos?"
+    backgroundColor="transparent"
+    border="none"
+    textColor="#E1E1E1"
+    hoverTextColor="white"
+  ></app-boton>
+  <app-boton
+    label="Nuestro Proposito"
+    backgroundColor="transparent"
+    border="none"
+    textColor="#E1E1E1"
+    hoverTextColor="white"
+  ></app-boton>
+  <app-boton
+    label="Memoria Anual"
+    backgroundColor="transparent"
+    border="none"
+    textColor="#E1E1E1"
+    hoverTextColor="white"
+  ></app-boton>
+  <app-boton
+    label="Video Manifiesto"
+    backgroundColor="transparent"
+    border="none"
+    textColor="#E1E1E1"
+    hoverTextColor="white"
+  ></app-boton>
+  <app-boton
+    label="Sala de Prensa"
+    backgroundColor="transparent"
+    border="none"
+    textColor="#E1E1E1"
+    hoverTextColor="white"
+  ></app-boton>
+</app-row>

@@ -40,7 +40,7 @@ export class ContainerComponent {
   @Input() height: string = 'auto';
   @Input() margin: string = '0';
   @Input() padding: string = '0';
-  @Input() backgroundColor: string = 'transparent';
+  @Input() backgroundColor: string = '';
   @Input() background: string = '';
   @Input() position: string = '';
   @Input() zindex: string = '';
