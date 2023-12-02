@@ -1,0 +1,24 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 10px; /* Espacio alrededor de los logos */
+  max-height: 200px;
+}
+
+.logo-left,
+.logo-right {
+  width: 50%;
+}
+
+.logo-right{
+  padding-right: 50px;
+  text-align: right;
+}
+
+.logo-left img,
+.logo-right img {
+  max-width: 50%; /* Ajustar el tamaño máximo de la imagen al contenedor */
+  max-height: 100px;
+}

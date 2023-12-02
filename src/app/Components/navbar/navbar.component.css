@@ -1,0 +1,19 @@
+.navbar {
+  background-color: #6d6d6d; /* Fondo gris */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px; /* Altura del navbar, puedes ajustar según tus necesidades */
+}
+
+.nav-button {
+  padding: 10px 20px; /* Color del texto del botón */
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgb(238, 236, 236);
+}
+
+.nav-button :hover {
+  color: white
+}
